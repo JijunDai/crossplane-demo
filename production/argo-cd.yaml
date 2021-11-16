@@ -1,3 +1,4 @@
+---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -9,7 +10,7 @@ spec:
   project: production
   source:
     path: argo-cd/overlays/production
-    repoURL: https://github.com/vfarcic/crossplane-demo
+    repoURL: https://github.com/JijunDai/crossplane-demo.git
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc

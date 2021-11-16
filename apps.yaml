@@ -1,5 +1,4 @@
 ---
-
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -10,7 +9,7 @@ metadata:
 spec:
   project: production
   source:
-    repoURL: https://github.com/vfarcic/crossplane-demo.git
+    repoURL: https://github.com/JijunDai/crossplane-demo.git
     targetRevision: HEAD
     path: production
   destination:

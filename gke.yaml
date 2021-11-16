@@ -4,7 +4,7 @@ metadata:
   name: devops-toolkit
 spec:
   forProvider:
-    location: us-east1
+    location: us-central1
     initialClusterVersion: latest
 
 ---
@@ -16,13 +16,16 @@ metadata:
 spec:
   forProvider:
     locations:
-    - us-east1-b
+    - us-central1-a
+    - us-central1-b
+    - us-central1-c
     clusterRef:
       name: devops-toolkit
     initialNodeCount: 1
     config:
       preemptible: true
-      machineType: e2-standard-2
+      #machineType: e2-standard-2
+      machineType: e2-medium
       oauthScopes:
       - https://www.googleapis.com/auth/cloud-platform
     autoscaling:
